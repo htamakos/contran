@@ -9,8 +9,8 @@ type EbDockerrunAwsJson struct {
 type EbContainerDefinition struct {
 	Name              string          `json:"name"`
 	Image             string          `json:"image"`
-	Environment       []EbEnvironment `json:environment,omitempty`
-	Essential         bool            `json:essential`
+	Environment       []EbEnvironment `json:"environment,omitempty"`
+	Essential         bool            `json:"essential"`
 	Memory            int64           `json:"memory"`
 	MemoryReservation int64           `json:"memoryReservation"`
 	MountPoints       []EbMountPoint  `json:"mountPoints,omitempty"`
