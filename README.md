@@ -5,7 +5,7 @@ The following are currently supported by contran
 
 |From|To|
 |:---|:-|
-|Elastic Beanstalk|Docker-compose configuration|
+|Elastic Beanstalk|Docker Compose|
 
 # Usage
 
