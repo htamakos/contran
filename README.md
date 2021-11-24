@@ -5,7 +5,9 @@ The following are currently supported by contran
 
 |From|To|
 |:---|:-|
-|Elastic Beanstalk|Docker Compose|
+|Elastic Beanstalk(Dockerrun.aws.json(v2)|Docker Compose|
+
+> However, not all configurations are supported in both Elastic Beanstalk and Docker Compose formats.
 
 # Usage
 
