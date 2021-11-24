@@ -33,6 +33,12 @@ func (eb *Eb) Input(values []byte) (*types.CommonSpecs, error) {
 			Image: c.Image,
 		}
 
+		if c.Cpu != 0 {
+			containerSpec.Cpu = types.ContainerCpu{
+				Shares: c.Cpu,
+			}
+		}
+
 		if c.Memory != 0 {
 			containerSpec.MemoryLimit = types.ContainerMemoryLimit{
 				Unit:  "m",

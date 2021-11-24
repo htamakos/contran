@@ -26,6 +26,10 @@ func (c *Composer) Output(specs *types.CommonSpecs) ([]byte, error) {
 			Image: v.Image,
 		}
 
+		if v.Cpu.Shares != 0 {
+			service.CpuShares = v.Cpu.Shares
+		}
+
 		if v.MemoryLimit.Value != 0 {
 			service.MemLimit = v.MemoryLimit.String()
 		}

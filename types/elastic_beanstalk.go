@@ -11,6 +11,7 @@ type EbContainerDefinition struct {
 	Image             string          `json:"image"`
 	Environment       []EbEnvironment `json:"environment,omitempty"`
 	Essential         bool            `json:"essential"`
+	Cpu               int64           `json:"cpu"`
 	Memory            int64           `json:"memory"`
 	MemoryReservation int64           `json:"memoryReservation"`
 	MountPoints       []EbMountPoint  `json:"mountPoints,omitempty"`

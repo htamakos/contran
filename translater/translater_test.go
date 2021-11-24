@@ -34,6 +34,7 @@ func TestTraslate(t *testing.T) {
         }
       ],
       "essential": true,
+      "cpu": 73,
       "memory": 128,
       "memoryReservation": 128,
       "privileged": true,
@@ -115,6 +116,7 @@ services:
     - /host/sys
     - --collector.filesystem.ignored-mount-points
     - '"^/(sys|proc|dev|host|etc|rootfs/var/lib/docker|rootfs/var/run/docker)($|/)"'
+    cpu_shares: 73
     mem_limit: 128m
     mem_reservation: 128m
     privileged: true
