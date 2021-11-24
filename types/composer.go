@@ -14,6 +14,7 @@ type ComposerService struct {
 	Cpus           float32                `yaml:"cpus,omitempty" json:"cpus,omitempty"`
 	MemLimit       string                 `yaml:"mem_limit,omitempty" json:"mem_limit,omitempty"`
 	MemReservation string                 `yaml:"mem_reservation,omitempty" json:"mem_reservation,omitempty"`
+	User           string                 `yaml:"user,omitempty" json:"user,omitempty"`
 	Privileged     bool                   `yaml:"privileged,omitempty" json:"privileged,omitempty"`
 	Links          []string               `yaml:"links,omitempty" json:"links,omitempty"`
 	Ports          []string               `yaml:"ports,omitempty" json:"ports,omitempty"`

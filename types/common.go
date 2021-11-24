@@ -20,6 +20,7 @@ type ContainerSpec struct {
 	MemoryLimit       ContainerMemoryLimit
 	MemoryReservation ContainerMemoryReservation
 	Cpu               ContainerCpu
+	User              string
 	Privileged        bool
 	Restart           string
 	Runtime           string

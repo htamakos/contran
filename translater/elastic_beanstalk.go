@@ -33,6 +33,10 @@ func (eb *Eb) Input(values []byte) (*types.CommonSpecs, error) {
 			Image: c.Image,
 		}
 
+		if c.User != "" {
+			containerSpec.User = c.User
+		}
+
 		if c.Cpu != 0 {
 			containerSpec.Cpu = types.ContainerCpu{
 				Shares: c.Cpu,

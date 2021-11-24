@@ -37,6 +37,7 @@ func TestTraslate(t *testing.T) {
       "cpu": 73,
       "memory": 128,
       "memoryReservation": 128,
+      "user": "php",
       "privileged": true,
       "mountPoints": [
         {
@@ -119,6 +120,7 @@ services:
     cpu_shares: 73
     mem_limit: 128m
     mem_reservation: 128m
+    user: php
     privileged: true
     volumes:
     - /var/app/current/php-app:/var/www/html:ro

@@ -26,6 +26,10 @@ func (c *Composer) Output(specs *types.CommonSpecs) ([]byte, error) {
 			Image: v.Image,
 		}
 
+		if v.User != "" {
+			service.User = v.User
+		}
+
 		if v.Cpu.Shares != 0 {
 			service.CpuShares = v.Cpu.Shares
 		}

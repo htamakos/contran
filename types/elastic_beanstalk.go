@@ -15,6 +15,7 @@ type EbContainerDefinition struct {
 	Memory            int64           `json:"memory"`
 	MemoryReservation int64           `json:"memoryReservation"`
 	MountPoints       []EbMountPoint  `json:"mountPoints,omitempty"`
+	User              string          `json:"user,omitempty"`
 	Privileged        bool            `json:"privileged,omitempty"`
 	PortMappings      []EbPortMapping `json:"portMappings,omitempty"`
 	Ulimits           []EbUlimit      `json:"ulimits,omitempty"`
