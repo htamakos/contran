@@ -47,7 +47,7 @@ func (c *Composer) Output(specs *types.CommonSpecs) ([]byte, error) {
 		}
 
 		if len(v.Environments) > 0 {
-			environments := map[string]string{}
+			environments := map[string]interface{}{}
 			for _, e := range v.Environments {
 				environments[e.Name] = e.Value
 			}

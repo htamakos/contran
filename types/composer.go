@@ -8,7 +8,7 @@ type ComposerConfig struct {
 type ComposerService struct {
 	Name           string                 `yaml:"-" json:"-"`
 	Image          string                 `yaml:"image,omitempty" json:"image,omitempty"`
-	Environment    map[string]string      `yaml:"environment,omitempty" json:"environment,omitempty"`
+	Environment    map[string]interface{} `yaml:"environment,omitempty" json:"environment,omitempty"`
 	Commands       []string               `yaml:"command,omitempty" json:"command,omitempty"`
 	CpuShares      int64                  `yaml:"cpu_shares,omitempty"`
 	Cpus           float32                `yaml:"cpus,omitempty" json:"cpus,omitempty"`

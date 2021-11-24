@@ -32,7 +32,7 @@ type ContainerSpec struct {
 
 type ContainerEnvironment struct {
 	Name  string
-	Value string
+	Value interface{}
 }
 
 type ContainerMemoryLimit struct {
