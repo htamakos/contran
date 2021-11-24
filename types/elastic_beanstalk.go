@@ -1,7 +1,7 @@
 package types
 
 type EbDockerrunAwsJson struct {
-	AWSEBDockerrunVersion int                     `json:"AWSEBDockerrunVersion"`
+	AWSEBDockerrunVersion interface{}             `json:"AWSEBDockerrunVersion"`
 	Volumes               []EbVolume              `json:"volumes,omitempty"`
 	ContainerDefinitions  []EbContainerDefinition `json:"containerDefinitions,omitempty"`
 }
